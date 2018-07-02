@@ -4,8 +4,8 @@ __version__ = '0.1.0'
 
 import json, sys, requests, os, texttable
 
-os.environ['http_proxy'] = ''
-os.environ['https_proxy'] = ''
+#os.environ['http_proxy'] = ''
+#os.environ['https_proxy'] = ''
 URL = "http://api.football-data.org/v1/competitions/467/fixtures"
 headers = {
     #"X-Auth-Token": "c84e3a91be234c78a7b0b8f95b6bc655"
