@@ -12,7 +12,7 @@ import json
 import texttable
 import os
 
-os.environ['http_proxy'] = ''
+#os.environ['http_proxy'] = ''
 
 URL = "http://api.football-data.org/v1/"
 headers = {
@@ -46,8 +46,9 @@ def run(argv):
             print(table.draw() + "\n")
 
 if __name__ == '__main__':
-    if len(sys.argv) <= 1:
-        print("usage: python try-requests.py x \n"
-              "\t \t where x can be \n \t \t 1 for tournament name \n \t \t 2 for league table")
-    else:
-        main(sys.argv[1])
+    run("groupStage")
+    #if len(sys.argv) <= 1:
+    #    print("usage: python try-requests.py x \n"
+    #          "\t \t where x can be \n \t \t 1 for tournament name \n \t \t 2 for league table")
+    #else:
+    #    run(sys.argv[1])
