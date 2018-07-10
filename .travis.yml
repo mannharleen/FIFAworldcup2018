@@ -3,7 +3,7 @@ python:
   - "3.6"
 # command to install dependencies
 #
-#script:
+script: python wcup2018/tests.py
 branches:
   only:
     - master
